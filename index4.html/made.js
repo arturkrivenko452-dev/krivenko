@@ -1,0 +1,10 @@
+const title= document.getElementById('title');
+title.textContent = 'JavaScript успішно підключено!';
+const content = document.getElementById('content');
+const p = document.createElement('p');
+p.textContent = 'Цей абзац створили за домогою DOM';
+content.appendChild(p);
+content.style.backgroundColor = '#e0f7fa';
+content.style.borderColor = '#00796b';
+content.style.color = '#004d40';
+content.style.borderRadius = '30px';

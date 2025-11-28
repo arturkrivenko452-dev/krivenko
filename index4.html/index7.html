@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<title>Фoрма-Валідація</title>
+<style>
+body {
+    background: burlywood;
+    padding: 20px;
+}
+form {
+    width: 320px;
+    background-color: aqua;
+    padding: 20px;
+}
+button {
+    color: blue;
+    width: 90%;
+    border-radius: 10px;
+    padding: 15px;
+}
+</style>
+</head>
+<body>
+<form id="form">
+<h1>Реєстрація</h1>
+<label for="name">Ім'я</label>
+<input id="name" type="text">
+<div>Введіть мінімум 2 символи.</div>
+
+<label form="email">Email</label>
+<input id="email" type="email">
+<div>Email має містити "@" i .</div>
+
+<label for="pass">Пароль</label>
+<input  id="pass" type="password">
+<div>Мінімум 6 символів</div>
+
+<label for="confirm">Підтвердження паролю</label>
+<input id="confirm" type="password">
+<div>Паролі не співпадають.</div>
+
+<label for="agree">Погoджуюсь с умовами</label>
+<input id="agree" type="checkbox">
+
+<button type="submit">Зареєструватись</button>
+<button type="clear">Очистити форму</button>
+</form>
+<script>
+    const name = document.getElementById("name");
+    const email = document.getElementById("email");
+    const pass = document.getElementById("pass");
+    const pass2 = document.getElementById("pass2");
+    const agree = document.getElementById("agree");
+    const clear = document.getElementById("clear");
+
+</script>
+</body>

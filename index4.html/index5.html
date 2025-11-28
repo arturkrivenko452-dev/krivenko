@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<title>Лічильник</title>
+<body>
+<div>
+<button id='minus'>-</button>
+<p id='count'>0 </p>
+<button id='plus'> +</button>
+</div>
+<script>
+let min = 0
+let max = 20
+let count = 0
+const countElm = document.getElementById('count');
+const plus = document.getElementById('plus');
+const minus = document.getElementById('minus');
+plus.addEventListener('click', ()=>{
+    if(count<max){
+        count++
+
+        countElm.textContent = count
+
+    }
+})
+
+
+minus.addEventListener('click', () => {
+    if(count>min){
+        count--;
+
+        countElm.textContent = count
+    }
+});
+</script>
+</body>
+</html>

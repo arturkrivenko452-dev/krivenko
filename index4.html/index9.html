@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<title>Фoрма-Валідація</title>
+</head>
+<body>
+<form id="form">
+<h1>Реєстрація</h1>
+<label for="name">Ім'я:</label>
+<input id="name" type="text">
+
+<label form="email">Email:</label>
+<input id="email" type="email">
+
+<label for="pass">Пароль:</label>
+<input  id="pass" type="password">
+
+<label>Підтвердження паролю:</label>
+<input id="pass2" type="password">
+
+<input type="checkbox" id="agree">
+<label>Погоджуюсь с умовами:</label>
+
+<button type="submit">Зареєструватись:</button>
+
+<button type="button" id="clear">Очистити форму:</button>
+</form>
+<script>
+    const nameInput = document.getElementById("name");
+    const emailInput = document.getElementById("email");
+    const passInput = document.getElementById("pass");
+    const passInput2 = document.getElementById("pass2");
+    const agree = document.getElementById("agree");
+    const clear = document.getElementById("clear");
+</script>
+</body>
